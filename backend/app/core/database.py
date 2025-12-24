@@ -1,0 +1,31 @@
+from sqlalchemy import create_engine,URL
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+
+connection_url = URL.create(
+    drivername="postgresql",
+    username=os.getenv("db_username"),
+    password=os.getenv("db_password"),
+    host=os.getenv("db_host"),
+    port = os.getenv("db_port"),
+    database=os.getenv("db_name")
+    
+)
+
+engine = create_engine(connection_url)
+
+SessionLocal = sessionmaker(autocommit=False,autoflush=False,bind=engine)
+
+Base = declarative_base()
+
+
+def get_db():
+    db = SessionLocal()
+    try :
+            yield db
+    finally:
+        db.close()
