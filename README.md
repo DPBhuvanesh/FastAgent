@@ -6,3 +6,13 @@ This project uses a dummy game sales for CRUD operation and it focuses to easy b
 ```bash
 git clone [https://github.com/DPBhuvanesh/FastAgent.git](https://github.com/DPBhuvanesh/FastAgent.git)
 cd FastAgent
+```
+### 2. Set Virtual Environment
+
+### 3.Ensure your virtual environment is activated, then run:
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 4. Set your config in .env 
