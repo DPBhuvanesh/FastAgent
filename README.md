@@ -1,6 +1,6 @@
-This project focuses on using FastMCP and Google ADK to create a agent for backend operation. 
+<h1>This project focuses on using FastMCP and Google ADK to create a agent for backend operation.</h1>
 
-This project uses a dummy game sales for CRUD operation and it focuses to easy backend operation with help of Agent and it is used for data analysis.
+<h2>This project uses a dummy game sales for CRUD operation and it focuses to easy backend operation with help of Agent and it is used for data analysis.</h2>
 
 ### 1. Clone the repository
 ```bash
